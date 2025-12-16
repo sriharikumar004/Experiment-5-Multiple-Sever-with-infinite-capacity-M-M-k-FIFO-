@@ -76,17 +76,29 @@ P0=1/sum
 
 if(rho<1): 
     Lq=(P0/math.factorial(c))*(1/c)*(lam/mu)**(c+1)/(1-rho)**2 
+    
     Ls=Lq+lam/mu 
+    
     Ws=Ls/lam 
+    
     Wq=Lq/lam 
+
     print("Average number of objects in the system: %0.2f"%Ls) 
+    
     print("Average numner of objects in the conveyor: %0.2f"%Lq) 
+    
     print("Average waiting time of an object in the system: %0.2f secs"%Ws) 
+    
     print("Average waiting time of an object in the conveyor: %0.2f secs"%Ws) 
+    
     print("Probability that the system is busy: %0.2f" %(rho)) 
+    
     print("Probability that the system is empty:%0.2f "%(1-rho)) 
+    
 else: 
+
     print("Warning! Objects overflow will happen in the conveyor") 
+
 print("-----------------------------------------------------") 
 
 
